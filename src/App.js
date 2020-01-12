@@ -1,26 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import TarjetaFruta from './components/TarjetaFruta';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div>
+    <TarjetaFruta name={'sandia'} price={5.00}></TarjetaFruta>
+    <TarjetaFruta name={'sandia'} price={1.50}></TarjetaFruta>
+    <TarjetaFruta name={'kiw¡'} price={3.30}></TarjetaFruta>
+  </div>
+)
 
-export default App;
+export default App
